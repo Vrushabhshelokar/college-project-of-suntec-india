@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>information about clients</title>
+
+  <link rel="icon" href="suntec india.png">
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      margin: 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      /* Vertically center align items */
+      padding: 10px 20px;
+      background-color: #333;
+      /* Adjust to match your design */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .img {
+      height: 125px;
+      padding-left: 240px;
+      border-radius: 100px;
+    }
+
+    h4 {
+      float: right;
+      margin-left: 20px;
+      margin-right: 1200px;
+      margin-top: 0px;
+      font-size: 20px;
+      color: white;
+
+
+    }
+
+    button {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      height: 50px;
+      border-radius: 40px;
+      position: relative;
+      left: 250px;
+      border: none;
+      background: #9bd4fa;
+      cursor: pointer;
+    }
+
+    .but0 {
+      margin-right: 70px;
+      margin-left: 50px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but0:hover {
+      transform: scale(1.1);
+    }
+
+    .but1 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but1:hover {
+      transform: scale(1.1);
+    }
+
+    .but2 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but2:hover {
+      transform: scale(1.1);
+    }
+
+
+    .but3 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but3:hover {
+      transform: scale(1.1);
+    }
+
+    .but4 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but4:hover {
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background-image: url(backde\ \(2\).jpg);
+      background-color: #fff;
+      height: 800px;
+      bottom: 16px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pa {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: absolute;
+      /* coustom arrangement*/
+      top: 850px;
+      right: 0px;
+      text-align: center;
+      width: 100%;
+
+    }
+
+    .his {
+
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      height: 600px;
+      width: 100%;
+      z-index: -1;
+
+    }
+
+    .mh {
+
+      width: 100%;
+
+
+    }
+
+    .hed1 {
+      position: absolute;
+      top: 180px;
+      left: 250px;
+      color: #c56a35;
+      font-size: 50px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .hed2 {
+      color: #e7e5e5;
+      position: absolute;
+      top: 280px;
+      left: 290px;
+      font-size: 50px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .inhi {
+      position: absolute;
+
+    }
+
+    .s1 {
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 180px;
+      left: 900px;
+      transition: transform 0.3s ease;
+    }
+
+    .s1:hover {
+      transform: scale(1.05);
+    }
+
+    .s2 {
+      transition: transform 0.3s ease;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 180px;
+      left: 1150px;
+    }
+
+    .s2:hover {
+      transform: scale(1.05);
+    }
+
+    .s3 {
+      transition: transform 0.3s ease;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 180px;
+      left: 1400px;
+    }
+
+    .s3:hover {
+      transform: scale(1.05);
+    }
+
+    .s4 {
+      transition: transform 0.3s ease;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 180px;
+      left: 1650px;
+    }
+
+    .s4:hover {
+      transform: scale(1.05);
+    }
+
+    .s5 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 380px;
+      left: 900px;
+    }
+
+    .s5:hover {
+      transform: scale(1.05);
+    }
+
+    .s6 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 380px;
+      left: 1150px;
+    }
+
+    .s6:hover {
+      transform: scale(1.05);
+    }
+
+    .s7 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 380px;
+      left: 1400px;
+    }
+
+    .s7:hover {
+      transform: scale(1.05);
+    }
+
+    .s8 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 380px;
+      left: 1650px;
+    }
+
+    .s8:hover {
+      transform: scale(1.05);
+    }
+
+    .s9 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 580px;
+      left: 900px;
+    }
+
+    .s9:hover {
+      transform: scale(1.05);
+    }
+
+    .s10 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 580px;
+      left: 1150px;
+    }
+
+    .s10:hover {
+      transform: scale(1.05);
+    }
+
+    .s11 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 580px;
+      left: 1400px;
+    }
+
+    .s11:hover {
+      transform: scale(1.05);
+    }
+
+    .s12 {
+      transition: transform 0.3s ease;
+      height: 150px;
+      width: 200px;
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      top: 580px;
+      left: 1650px;
+    }
+
+    .s12:hover {
+      transform: scale(1.05);
+    }
+
+
+
+
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+      margin-top: 600px;
+
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer h2,
+    .footer h3 {
+      color: #f9a825;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      flex: 1 1 200px;
+      margin: 10px;
+
+    }
+
+
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+
+    .footer-links a:hover {
+      color: #f9a825;
+    }
+
+    .footer-contact a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-social a {
+      margin-right: 10px;
+    }
+
+    .footer-social img {
+      width: 24px;
+      height: 24px;
+
+      transition: filter 0.3s;
+    }
+
+    .footer-social img:hover {
+      filter: brightness(0.7) invert(0.7);
+      /* Darken on hover */
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+
+
+    }
+
+    .return-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 1700px;
+      background: #00b7ff;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
+      width: 150px;
+    }
+
+    .return-to-top:hover {
+      background: #0044aa;
+    }
+
+
+    .h1u {
+      text-align: center;
+      color: #0073e6;
+      margin-bottom: 30px;
+      position: relative;
+      top: 880px;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+
+    .client-container {
+      position: relative;
+      top: 900px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .client-card {
+      width: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .client-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .client-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .client-card .info {
+      padding: 16px;
+    }
+
+    .info h3 {
+      margin: 0;
+      color: #0073e6;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .info p {
+      margin: 10px 0;
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .info .icon {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #0073e6;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .info .icon i {
+      color: #0073e6;
+    }
+
+    .client-card::before {
+      content: "";
+      display: block;
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(90deg, #0073e6, #0056a3);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .client-card {
+        width: 90%;
+      }
+    }
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .img {
+    height: 100px;
+    padding-left: 0;
+  }
+
+  h4 {
+    margin: 10px 0;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  button {
+    position: relative;
+    left: 0;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .but0, .but1, .but2, .but3, .but4 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hed1, .hed2 {
+    font-size: 28px;
+    left: 50px;
+    top: auto;
+  }
+
+  .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12 {
+    position: static;
+    margin: 10px auto;
+    height: 100px;
+    width: 150px;
+  }
+
+  .pa {
+    font-size: 20px;
+    top: auto;
+    padding: 20px;
+  }
+
+  .h1u {
+    font-size: 22px;
+    position: relative;
+    top: auto;
+    margin-bottom: 20px;
+  }
+
+  .client-container {
+    flex-direction: column;
+    top: auto;
+    padding: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .client-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about, .footer-links, .footer-contact, .footer-social {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .return-to-top {
+    left: auto;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hed1, .hed2 {
+    font-size: 20px;
+    left: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9, .s10, .s11, .s12 {
+    height: 80px;
+    width: 100px;
+  }
+
+  .client-card img {
+    height: 150px;
+  }
+
+  .footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .img {
+    height: 80px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .hed1, .hed2 {
+    font-size: 18px;
+    left: 10px;
+  }
+
+  .client-card {
+    width: 100%;
+  }
+
+  .return-to-top {
+    font-size: 12px;
+    width: 120px;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img class="img" src="suntec india-modified.png">
+    <h4>Dependable Outscouring
+      Since 1999
+    </h4>
+  </div>
+
+  <div class="nav1">
+    <a href="home.html" target="_blank"><button class="but0">Home Page</button></a>
+    <a href="Histroy of company.html" target="_blank"><button class="but1">Histroy Of Company</button></a>
+    <a href="Information About Clients.html" target="_blank"><button class="but2">Information About Clients</button></a>
+    <a href="Deatails About Technology And skill set they use.html" target="_blank"><button class="but3">Deatails About
+        Technology And Skill Set They Use</button></a>
+    <a href="program organized.html" target="_blank"><button class="but4">Program Organized By Company</button></a>
+
+
+    <div id="hp" class="hero">
+
+      <div>
+        <h1 class="hed1">Our Clients</h1>
+        <h1 class="hed2">Trusted by Some <br>of the World's<br> Best Brands<br>
+        </h1>
+      </div>
+
+      <div class="inhe">
+        <a><img src="bose.png.png" class="s1"></a>
+        <a><img src="byju.png" class="s2"></a>
+        <a><img src="peps.png" class="s3"></a>
+        <a><img src="bajaj.png" class="s4"></a>
+        <a><img src="panaso.png" class="s5"></a>
+        <a><img src="honda.png" class="s6"></a>
+        <a><img src="pearson.png" class="s7"></a>
+        <a><img src="nielsen.png" class="s8"></a>
+        <a><img src="green.png" class="s9"></a>
+        <a><img src="dksh.png" class="s10"></a>
+        <a><img src="dent.png" class="s11"></a>
+        <a><img src="unicef.png" class="s12"></a>
+      </div>
+
+
+      <div class="mh">
+        <p class="pa">
+
+
+
+        <h1 class="h1u">Information About Clients</h1>
+
+        <div class="client-container">
+          <!-- Row 1 -->
+          <div class="row">
+            <div class="client-card">
+              <img src="TechGenius.png" alt="Client 1">
+              <div class="info">
+                <h3>TechGenius</h3>
+                <p>Industry: Technology<br>
+                  Services: AI-driven software development, cloud solutions, and IT consulting.</p>
+                <div class="icon">
+                  <i>&#128736;</i> <!-- Toolbox Icon -->
+                  <span>20+ Custom Applications Delivered</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <img src="HealthBridge.jpg" alt="Client 2">
+              <div class="info">
+                <h3>HealthBridge</h3>
+                <p>Industry: Healthcare<br>
+                  Services: Digital transformation for hospitals, wearable IoT integration.</p>
+                <div class="icon">
+                  <i>&#128179;</i> <!-- Money Icon -->
+                  <span>10+ Years of Collaboration</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <img src="RetailX.jpg" alt="Client 3">
+              <div class="info">
+                <h3>RetailX</h3>
+                <p>Industry: Retail & E-commerce<br>
+                  Services: Omni-channel development and customer analytics platforms.</p>
+                <div class="icon">
+                  <i>&#128221;</i> <!-- Clipboard Icon -->
+                  <span>50+ E-commerce Solutions Deployed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="row">
+            <div class="client-card">
+              <img src="EduSmart.png" alt="Client 4">
+              <div class="info">
+                <h3>EduSmart</h3>
+                <p>Industry: Education<br>
+                  Services: Online learning platforms and virtual classroom integration.</p>
+                <div class="icon">
+                  <i>&#128218;</i> <!-- Book Icon -->
+                  <span>100+ Courses Delivered</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <img src="EcoSolutions.png" alt="Client 5">
+              <div class="info">
+                <h3>EcoSolutions</h3>
+                <p>Industry: Environment<br>
+                  Services: Smart waste management and renewable energy analytics.</p>
+                <div class="icon">
+                  <i>&#127758;</i> <!-- Globe Icon -->
+                  <span>5+ Sustainability Projects</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="client-card">
+              <img src="AutoDrive.png" alt="Client 6">
+              <div class="info">
+                <h3>AutoDrive</h3>
+                <p>Industry: Automotive<br>
+                  Services: Autonomous driving software and vehicle telematics.</p>
+                <div class="icon">
+                  <i>&#128663;</i> <!-- Car Icon -->
+                  <span>8+ Automotive Solutions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+    </div>
+    </p>
+  </div>
+
+  <!-- <div class="his">
+            <a href="https://www.suntecindia.com/" target="_blank"><img src="client.png" class="his"></a>
+        </div>-->
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br>
+  <button class="return-to-top" onclick="scrollToTop()">Return to Top</button>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>Sun Tec</h2>
+        <p>Providing cutting-edge solutions to brighten your tech future. We specialize in modern front-end and web
+          development services to bring your ideas to life.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#hp">Home</a></li>
+          <li><a href="#hp">About Us</a></li>
+          <li><a href="https://www.suntecindia.com/data-services.html">Services</a></li>
+          <li><a href="https://www.suntecindia.com/contactus.htm">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@suntec.com">info@suntec.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <p>Address: 123 Sun Tec Road, Tech City, ST 56789</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/SuntecIndia" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/SuntecIndia" target="_blank"><img src="twi.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/company/suntecindia" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/suntec_india/" target="_blank"><img src="insta.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Sun Tec. All Rights Reserved. <br>mini project by vrushabh shelokar</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll to top function
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Show "Return to Top" button on scroll
+    const topButton = document.querySelector('.return-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        topButton.style.display = 'block';
+      } else {
+        topButton.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+
+</html>
