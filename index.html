@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunTec</title>
+
+  <link rel="icon" href="suntec india.png">
+  <style>
+    body {
+      background-color: rgb(253, 253, 253);
+      overflow-x: hidden;
+      margin: 0;
+
+    }
+
+
+    .header {
+      display: flex;
+      align-items: center;
+      /* Vertically center align items */
+      padding: 10px 20px;
+      background-color: #333;
+      /* Adjust to match your design */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+
+    }
+
+    .img {
+      height: 125px;
+      padding-left: 240px;
+      border-radius: 100px;
+
+
+
+    }
+
+    h4 {
+      float: right;
+      margin-left: 20px;
+      margin-right: 1200px;
+      margin-top: 0px;
+      font-size: 20px;
+      color: white;
+
+
+
+
+    }
+
+    .nav1 {
+      background-color: white;
+      height: 0px;
+      width: 100%;
+
+    }
+
+    button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 50px;
+      border-radius: 40px;
+      position: relative;
+      left: 250px;
+      border: none;
+      background: #9bd4fa;
+      cursor: pointer;
+    }
+
+    .but0 {
+      margin-right: 70px;
+      margin-left: 50px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but0:hover {
+      transform: scale(1.1);
+      background: #3498db;
+    }
+
+    .but1 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but1:hover {
+      transform: scale(1.1);
+      background: #3498db;
+    }
+
+    .but2 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but2:hover {
+      transform: scale(1.1);
+      background: #3498db;
+    }
+
+
+    .but3 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but3:hover {
+      transform: scale(1.1);
+      background: #3498db;
+    }
+
+    .but4 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but4:hover {
+      transform: scale(1.1);
+      background: #3498db;
+    }
+
+    .hero {
+
+      height: 710px;
+      margin-bottom: 550px;
+
+    }
+
+
+
+    #para {
+
+      text-align: center;
+      position: absolute;
+      /* coustom arrangement*/
+      bottom: 100px;
+      left: 30px;
+      font-size: 24px;
+    }
+
+    .im {
+      float: right;
+      margin-right: 100px;
+      padding-top: 200px;
+    }
+
+    /* transition on hover */
+    .exp1 {
+      border-radius: 50px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      bottom: 400px;
+      right: 300px;
+      transition: transform 0.3s ease;
+      border-color: black;
+
+    }
+
+    .exp1:hover {
+      transform: scale(1.05);
+
+
+    }
+
+    .exp2 {
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      right: 70px;
+      top: 580px;
+      transition: transform 0.3s ease;
+    }
+
+    .exp2:hover {
+      transform: scale(1.05);
+    }
+
+    .exp3 {
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      right: 297px;
+      top: 580px;
+      transition: transform 0.3s ease;
+    }
+
+    .exp3:hover {
+      transform: scale(1.05);
+    }
+
+    .exp4 {
+      border-radius: 40px;
+      height: 150px;
+      width: 200px;
+      position: absolute;
+      right: 520px;
+      top: 580px;
+      transition: transform 0.3s ease;
+    }
+
+    .exp4:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes textColorChange {
+      0% {
+        color: #000000;
+        /* White */
+      }
+
+      20% {
+        color: #000000;
+        /* Black */
+      }
+
+      40% {
+        color: #ffffff;
+        /* Orange */
+      }
+
+      60% {
+        color: #000000;
+        /* Green */
+      }
+
+      80% {
+        color: #000000;
+        /* Blue */
+      }
+
+      100% {
+        color: #000000;
+        /* Back to White */
+      }
+    }
+
+    .text-overlay {
+
+      position: absolute;
+      /* coustom arrangement*/
+      top: 100px;
+      left: 130px;
+      width: 700px;
+      font-size: 100px;
+      animation: textColorChange 10s infinite;
+
+      color: white;
+      /* Default text color */
+
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer h2,
+    .footer h3 {
+      color: #f9a825;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      flex: 1 1 200px;
+      margin: 10px;
+
+    }
+
+
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+
+    .footer-links a:hover {
+      color: #f9a825;
+    }
+
+    .footer-contact a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-social a {
+      margin-right: 10px;
+    }
+
+    .footer-social img {
+      width: 24px;
+      height: 24px;
+
+      transition: filter 0.3s;
+    }
+
+    .footer-social img:hover {
+      filter: brightness(0.7) invert(0.7);
+      /* Darken on hover */
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+
+
+    }
+
+    .text-img-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      opacity: 0;
+      transform: translateX(-100px);
+      /* Start off-screen to the left */
+      transition: opacity 1s, transform 1s;
+      margin-bottom: 50px;
+      /* Spacing between blocks */
+    }
+
+    .text-img-container.visible {
+      opacity: 1;
+      transform: translateX(0);
+      /* Move to original position */
+    }
+
+    @keyframes imageChange {
+      0% {
+        background-image: url('digital-marketing1.jpg');
+      }
+
+      20% {
+        background-image: url('analysis2.jpg');
+      }
+
+      40% {
+        background-image: url('business3.jpg');
+      }
+
+      60% {
+        background-image: url('digital-marketing4.jpg');
+      }
+
+      80% {
+        background-image: url('typing5.jpg');
+      }
+
+      100% {
+        background-image: url('digital-marketing1.jpg');
+      }
+
+      /* Loop back to the first image */
+    }
+
+
+    /* Container with changing background */
+    .image-slider {
+      width: 100%;
+      height: 710px;
+      /* Adjust as needed */
+      background-size: cover;
+      background-position: center;
+      animation: imageChange 9s infinite;
+      /* 9s for 3 images */
+    }
+
+    /*responsive*/
+
+    @media (max-width: 1200px) {
+  .img {
+    height: 100px;
+    padding-left: 50px; /* Adjust for smaller screens */
+  }
+
+  h4 {
+    margin-right: 600px; /* Reduced for better fit */
+    font-size: 18px;
+  }
+
+  button {
+    left: 50px;
+    width: auto;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: auto;
+    margin-bottom: 400px;
+  }
+
+  .text-overlay {
+    width: 90%;
+    font-size: 80px;
+    left: 10px;
+    top: 50px;
+  }
+
+  .exp1, .exp2, .exp3, .exp4 {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img {
+    padding-left: 0;
+  }
+
+  h4 {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  button {
+    position: static;
+    display: block;
+    margin: 5px auto;
+    width: 80%;
+  }
+
+  .text-overlay {
+    font-size: 60px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+  }
+
+  .im {
+    text-align: center;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .exp1, .exp2, .exp3, .exp4 {
+    position: static;
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #para {
+    font-size: 18px;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about, .footer-links, .footer-contact, .footer-social {
+    margin: 10px 0;
+  }
+
+  .footer-social a {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay {
+    font-size: 40px;
+  }
+
+  button {
+    font-size: 12px;
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  #para {
+    font-size: 14px;
+  }
+
+  .footer h2, .footer h3 {
+    font-size: 1.2em;
+  }
+
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+}
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img class="img" src="suntec india-modified.png">
+    <h4>Dependable Outscouring
+      Since 1999
+    </h4>
+  </div>
+
+
+  <a href="#hp"><button class="but0">Home Page</button></a>
+  <a href="Histroy of company.html" target="blank"><button class="but1">Histroy Of Company</button></a>
+  <a href="Information About Clients.html" target="_blank"><button class="but2">Information About Clients</button></a>
+  <a href="Deatails About Technology And skill set they use.html" target="_blank"><button class="but3">Deatails About
+      Technology And Skill Set They Use</button></a>
+  <a href="program organized.html" target="_blank"><button class="but4">Program Organized By Company</button></a>
+
+
+  <div id="hp" class="hero">
+
+    <div class="image-slider"></div>
+
+
+    <div class="text-overlay ">
+      <h1 class="text-overlay ">Multi-Process IT<br>Outsourcing<br>
+        services</h1>
+    </div>
+
+    <div class="p">
+
+      <div class="im"> <a href="https://www.suntecindia.com/iso-information-security-management-system.html"> <img
+            src="Iso1.png" class="exp1"> </a>
+        <a href="https://www.suntecindia.com/suntec-is-cmmi-level-3-certified.html"> <img src="cmmi.png" class="exp2">
+        </a>
+        <a href="https://www.suntecindia.com/HIPAA-compliance-for-healthcare-data-support.html"> <img src="hipaa.png"
+            class="exp3"></a>
+        <a href="https://www.suntecindia.com/iso-certification.html"> <img src="iso2.png" class="exp4"></a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <div class="text-img-container">
+    <div class="side">
+      <p id="para"> Welcome to SunTec India, a leading technology and data-centric outsourced services company based in
+        New Delhi, the capital of India. <u>Founded in 1999</u>, with over 8,530 clients from 50 countries and over
+        <u>1,500 full-time employees</u>, SunTec India has a growing global presence and is consistently rated amongst
+        India's best multi-process IT outsourcing companies.<br><br> <b>Founded in <u>1999</u>, Suntec India is a global
+          IT and business solutions provider headquartered in India, specializing in digital transformation, software
+          development, data analytics, AI, cloud computing, and IT consulting.<br><br> Known for its customer-focused
+          approach and strong global presence, Suntec India serves clients across sectors like finance, healthcare,
+          manufacturing, retail, and more.<br><br> With strategic partnerships with major tech providers like Microsoft
+          <br>and Oracle, Suntec India is recognized for its advanced technology expertise<br> and commitment to
+          innovation and quality, helping businesses achieve digital growth and operational excellence globally.</b></p>
+    </div>
+  </div>
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>Sun Tec</h2>
+        <p>Providing cutting-edge solutions to brighten your tech future. We specialize in modern front-end and web
+          development services to bring your ideas to life.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#hp">Home</a></li>
+          <li><a href="#hp">About Us</a></li>
+          <li><a href="https://www.suntecindia.com/data-services.html">Services</a></li>
+          <li><a href="https://www.suntecindia.com/contactus.htm">Contact</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@suntec.com">info@suntec.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        <p>Address: 123 Sun Tec Road, Tech City, ST 56789</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/SuntecIndia" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/SuntecIndia" target="_blank"><img src="twi.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/company/suntecindia" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/suntec_india/" target="_blank"><img src="insta.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Sun Tec. All Rights Reserved. <br>mini project by vrushabh shelokar</p>
+    </div>
+  </footer>
+
+
+  <script>
+    const blocks = document.querySelectorAll('.text-img-container');
+
+    window.addEventListener('scroll', () => {
+      blocks.forEach(block => {
+        const rect = block.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          block.classList.add('visible');
+        }
+      });
+    });
+
+    function adjustTextColor(backgroundColor, textElement) {
+      // Calculate perceived brightness
+      const [r, g, b] = backgroundColor.match(/\d+/g).map(Number);
+      const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+      // Change text color based on brightness (threshold ~128)
+      textElement.style.color = brightness > 128 ? 'black' : 'white';
+    }
+
+    // Example Usage
+    const textElement = document.querySelector('.text-overlay');
+    adjustTextColor('rgb(51, 204, 204)', textElement); // Example background color
+
+  </script>
+
+</body>
+
+</html>
