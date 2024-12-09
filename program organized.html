@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program organized by company</title>
+
+  <link rel="icon" href="suntec india.png">
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      margin: 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      /* Vertically center align items */
+      padding: 10px 20px;
+      background-color: #333;
+      /* Adjust to match your design */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .img1 {
+      width: 125px;
+      height: 125px;
+      padding-left: 240px;
+      border-radius: 100px;
+    }
+
+    h4 {
+      float: right;
+      margin-left: 20px;
+      margin-right: 1200px;
+      margin-top: 0px;
+      font-size: 20px;
+      color: white;
+
+
+    }
+
+    .nav1 {
+      background-color: white;
+      height: 70px;
+      width: 100%;
+
+    }
+
+    button {
+      margin-top: 10px;
+      margin-bottom: 55px;
+      height: 50px;
+      border-radius: 40px;
+      position: relative;
+      left: 250px;
+      border: none;
+      background: #9bd4fa;
+      cursor: pointer;
+
+
+    }
+
+    .but0 {
+      margin-right: 70px;
+      margin-left: 50px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but0:hover {
+      transform: scale(1.1);
+    }
+
+    .but1 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but1:hover {
+      transform: scale(1.1);
+    }
+
+    .but2 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but2:hover {
+      transform: scale(1.1);
+    }
+
+
+    .but3 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but3:hover {
+      transform: scale(1.1);
+    }
+
+    .but4 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but4:hover {
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background-color: #fff;
+      height: 1560px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      bottom: 35px;
+      z-index: 1;
+    }
+
+    h1 {
+      color: white;
+      font-size: 70px;
+      padding-top: 30px;
+      padding-left: 60px;
+    }
+
+    .p1 {
+      position: absolute;
+      top: 550px;
+      text-align: center;
+      width: 1400px;
+      left: 250px;
+      font-size: 18px;
+    }
+
+    .pa0 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 800px;
+      width: 50%;
+
+      text-align: center;
+    }
+
+    .pa2 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 1020px;
+      width: 50%;
+      left: 940px;
+      text-align: center;
+    }
+
+    .pa1 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 1150px;
+      width: 50%;
+
+      text-align: center;
+    }
+
+    .pa4 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 1300px;
+      width: 50%;
+      left: 940px;
+
+      text-align: center;
+    }
+
+    .his {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      height: 500px;
+      width: 100%;
+      z-index: -1;
+      border-radius: 0px;
+    }
+
+
+
+
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer h2,
+    .footer h3 {
+      color: #f9a825;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      flex: 1 1 200px;
+      margin: 10px;
+
+    }
+
+
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+
+    .footer-links a:hover {
+      color: #f9a825;
+    }
+
+    .footer-contact a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-social a {
+      margin-right: 10px;
+    }
+
+    .footer-social img {
+      width: 24px;
+      height: 24px;
+
+      transition: filter 0.3s;
+    }
+
+    .footer-social img:hover {
+      filter: brightness(0.7) invert(0.7);
+      /* Darken on hover */
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+
+
+    }
+
+    .return-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 1700px;
+      background: #00b7ff;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
+      width: 150px;
+    }
+
+    .return-to-top:hover {
+      background: #0044aa;
+    }
+
+    .content {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      top: 700px;
+    }
+
+    .text-img-container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-left: 0px;
+      opacity: 0;
+      transform: translateX(-100px);
+      /* Start off-screen to the left */
+      transition: opacity 1s, transform 1s;
+      margin-bottom: 50px;
+      /* Spacing between blocks */
+    }
+
+    .text-img-container.visible {
+      opacity: 1;
+      transform: translateX(0);
+      /* Move to original position */
+    }
+
+    .text-img-container.reverse {
+      flex-direction: row-reverse;
+      /* Reverse image and text positions */
+      transform: translateX(0);
+      /* Start off-screen to the right */
+      margin-left: 600px;
+
+    }
+
+    img {
+      width: 500px;
+      border-radius: 100px;
+    }
+
+    .text {
+      font-size: 1.5rem;
+    }
+
+    /* Responsive Styles */
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img1 {
+    padding-left: 0;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .nav1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 1000px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-left: 20px;
+  }
+
+  .p1 {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .pa0,
+  .pa1,
+  .pa2,
+  .pa4 {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pa2 {
+    left: 0;
+  }
+
+  .pa4 {
+    left: 0;
+  }
+
+  .text-img-container {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .text-img-container.reverse {
+    flex-direction: column;
+  }
+
+  img {
+    width: 80%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+
+  .return-to-top {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img1 {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .nav1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 800px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  .p1 {
+    font-size: 14px;
+  }
+
+  .pa0,
+  .pa1,
+  .pa2,
+  .pa4 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-img-container {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .text-img-container.reverse {
+    flex-direction: column;
+  }
+
+  img {
+    width: 90%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 0.7em;
+  }
+
+  .return-to-top {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img class="img1" src="suntec india-modified.png">
+    <h4>Dependable Outscouring
+      Since 1999
+    </h4>
+  </div>
+
+  <div class="nav1">
+    <a href="home.html" target="_blank"><button class="but0">Home Page</button></a>
+    <a href="Histroy of company.html" target="_blank"><button class="but1">Histroy Of Company</button></a>
+    <a href="Information About Clients.html" target="_blank"><button class="but2">Information About Clients</button></a>
+    <a href="Deatails About Technology And skill set they use.html" target="_blank"><button class="but3">Deatails About
+        Technology And Skill Set They Use</button></a>
+    <a href="program organized.html" target="_blank"><button class="but4">Program Organized By Company</button></a>
+
+
+    <div id="hp" class="hero">
+      <div class="his">
+        <a href="https://www.suntecindia.com/digital-marketing-services.html"><img src="pro.png" class="his"></a>
+      </div>
+      <p class="p1">Shifting customer preferences, complex marketing ecosystems,
+        meeting personalized customer expectations, and an explosion of new technologies have
+        posed significant challenges for marketers. Moreover, the explosion of multiple channels &
+        touchpoints has resulted in endless data to analyze and improve marketing performance.
+        To stay relevant in today’s cut-throat competition, navigating these challenges is a must.
+        This is where we come in!</p>
+
+      <div class="content">
+        <!-- First Block -->
+        <div class="text-img-container" id="animateBlock1">
+          <img src="traning.jpeg" alt="Image 1">
+          <div class="text">
+
+            <p><u style="color: black; font-size:30px;"> Employee Training and Development:</u> <span
+                style="color: black;"><br>&#9658;
+                Technical Skill Enhancement: Workshops and certifications in cloud computing, AI, and cybersecurity.<br>
+                &#9658; Leadership Training: Programs for communication and project management.<br>
+                &#9658;Onboarding and Mentorship: A structured onboarding process for new employees, paired with<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;mentorship programs to guide career growth.<br>
+                &#9658;Client Workshops and Webinars: Regular virtual and on-site sessions on the latest trends in
+                technology<br>&nbsp;&nbsp;&nbsp; and industry-specific best practices.<br>
+
+              </span></p>
+
+          </div>
+        </div>
+
+        <!-- Second Block -->
+        <div class="text-img-container reverse" id="animateBlock2" style="margin-right: 99px;">
+          <img src="clientegg.png" alt="Image 2">
+          <div class="text">
+            <p style="width:800px;"><u style="font-size:30px;">Client Engagement Initiatives:</u> <br>&#9658;Custom
+              Innovation Labs: Set up to experiment with cutting-edge technologies &nbsp;&nbsp;&nbsp;&nbsp;like AI,
+              blockchain, and<br>&nbsp;&nbsp;&nbsp; IoT, where clients can co-create innovative
+              solutions.<br>&#9658;Quarterly Business Reviews: A structured program to review client projects and
+              &nbsp;&nbsp;&nbsp;&nbsp;progress, ensuring transparency and continuous
+              improvement.<br>&nbsp;&nbsp;&nbsp;&nbsp;Innovation Labs: Collaboration with clients on AI, blockchain, and
+              IoT.<br>
+            </p>
+          </div>
+        </div>
+
+        <!-- Third Block -->
+        <div class="text-img-container" id="animateBlock3" style="margin-right: 550px;">
+          <img src="csr.png" alt="Image 3">
+          <div class="text" style="width: 550px;">
+            <p><u style="font-size:30px;">Corporate Social Responsibility (CSR):</u><br> &#9658; Education Initiatives:
+              Partnerships with educational &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;institutions to provide technology resources
+              and skill &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;training for students in underserved communities.<br>
+              &#9658;Environmental Sustainability: Tree-planting and <br>&nbsp;&nbsp;&nbsp;&nbsp;e-waste
+              recycling.<br>&#9658;Community Health and Welfare: Support programs &nbsp;&nbsp;&nbsp;&nbsp;focusing on
+              public health awareness, blood donation &nbsp;&nbsp;&nbsp;&nbsp;camps,and COVID-19 relief efforts.</p>
+          </div>
+        </div>
+
+        <!-- Fourth Block -->
+        <div class="text-img-container reverse" id="animateBlock4" style="margin-left: 809px;">
+          <img src="inova.jpg" alt="Image 4">
+          <div class="text" style="width: 500px;">
+            <p><u style="font-size:30px;">Innovation and Research:</u> <br> &#9658;Hackathons: Organized for employees
+              to foster a &nbsp;&nbsp;&nbsp;&nbsp;culture of innovation, creativity, and
+              &nbsp;&nbsp;&nbsp;&nbsp;collaboration.<br>
+              &#9658;R&D: A dedicated R&D team working on new &nbsp;&nbsp;&nbsp;&nbsp;technologies, methodologies, and
+              proof-of- &nbsp;&nbsp;&nbsp;&nbsp;concept projects to enhance service offerings.<br>&#9658;Business
+              Models: Crafting new business &nbsp;&nbsp;&nbsp;&nbsp;strategies and models that disrupt traditional
+              &nbsp;&nbsp;&nbsp;&nbsp;industries and create new market opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <button class="return-to-top" onclick="scrollToTop()">Return to Top</button>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h2>Sun Tec</h2>
+          <p>Providing cutting-edge solutions to brighten your tech future. We specialize in modern front-end and web
+            development services to bring your ideas to life.</p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#hp">Home</a></li>
+            <li><a href="#hp">About Us</a></li>
+            <li><a href="https://www.suntecindia.com/data-services.html">Services</a></li>
+            <li><a href="https://www.suntecindia.com/contactus.htm">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: <a href="mailto:info@suntec.com">info@suntec.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p>Address: 123 Sun Tec Road, Tech City, ST 56789</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="https://www.facebook.com/SuntecIndia" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+          <a href="https://x.com/SuntecIndia" target="_blank"><img src="twi.png" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/company/suntecindia" target="_blank"><img src="link.png" alt="LinkedIn"></a>
+          <a href="https://www.instagram.com/suntec_india/" target="_blank"><img src="insta.png" alt="Instagram"></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sun Tec. All Rights Reserved. <br>mini project by vrushabh shelokar</p>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll to top function
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      const blocks = document.querySelectorAll('.text-img-container');
+
+      window.addEventListener('scroll', () => {
+        blocks.forEach(block => {
+          const rect = block.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            block.classList.add('visible');
+          }
+        });
+      });
+
+      // Show "Return to Top" button on scroll
+      const topButton = document.querySelector('.return-to-top');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+          topButton.style.display = 'block';
+        } else {
+          topButton.style.display = 'none';
+        }
+      });
+    </script>
+</body>
+
+</html>
