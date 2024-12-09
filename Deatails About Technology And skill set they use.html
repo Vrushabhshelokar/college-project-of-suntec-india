@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deatails about technology and skill set they use</title>
+
+  <link rel="icon" href="suntec india.png">
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      margin: 0;
+      display: flex;
+      /* Enables flex layout */
+      flex-direction: column;
+      /* Makes the body content stack vertically */
+      min-height: 100vh;
+
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      /* Vertically center align items */
+      padding: 10px 20px;
+      background-color: #333;
+      /* Adjust to match your design */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .img {
+      height: 125px;
+      padding-left: 240px;
+      border-radius: 100px;
+    }
+
+    h4 {
+      float: right;
+      margin-left: 20px;
+      margin-right: 1200px;
+      margin-top: 0px;
+      font-size: 20px;
+      color: white;
+
+
+    }
+
+    button {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      height: 50px;
+      border-radius: 40px;
+      position: relative;
+      left: 250px;
+      border: none;
+      background: #9bd4fa;
+      cursor: pointer;
+
+
+    }
+
+    .but0 {
+      margin-right: 70px;
+      margin-left: 50px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but0:hover {
+      transform: scale(1.1);
+    }
+
+    .but1 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but1:hover {
+      transform: scale(1.1);
+    }
+
+    .but2 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but2:hover {
+      transform: scale(1.1);
+    }
+
+
+    .but3 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but3:hover {
+      transform: scale(1.1);
+    }
+
+    .but4 {
+      margin-right: 70px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .but4:hover {
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background-image: url(detf2.jpg);
+      height: 800px;
+
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      bottom: 0px;
+      z-index: 1;
+      /*opacity: 50%;*/
+    }
+
+    .herodet {
+      opacity: 90%;
+      border-radius: 90px;
+      height: 400px;
+      position: absolute;
+      top: 200px;
+      left: 1000px;
+      transition: transform 0.3s ease;
+
+    }
+
+    .herodet:hover {
+      transform: scale(1.05);
+    }
+
+
+    .pa {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 900px;
+      left: 400px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .pa {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 900px;
+      left: 400px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .pa1 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 900px;
+      left: 0px;
+      width: 50%;
+
+      text-align: center;
+    }
+
+    .pa2 {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      position: relative;
+      /* coustom arrangement*/
+      top: 950px;
+      left: 40px;
+      width: 50%;
+      text-align: center;
+    }
+
+    .his {
+      position: absolute;
+      top: 460px;
+      left: 50px;
+      right: 0;
+      height: 300px;
+      width: 600px;
+      z-index: -1;
+      border-radius: 50px;
+    }
+
+    .his20 {
+      position: absolute;
+      top: 1240px;
+      left: 1100px;
+      right: 0;
+      height: 300px;
+      width: 700px;
+      z-index: -1;
+      border-radius: 40px;
+    }
+
+    .his21 {
+      position: absolute;
+      top: 1600px;
+      left: 90px;
+      right: 0;
+      height: 300px;
+      width: 650px;
+      z-index: -1;
+      border-radius: 50px;
+    }
+
+    .his23 {
+      position: absolute;
+      top: 1940px;
+      left: 1100px;
+      right: 0;
+      height: 400px;
+      width: 700px;
+      z-index: -1;
+      border-radius: 40px;
+    }
+
+    .hed1d {
+      position: absolute;
+      top: 180px;
+      left: 250px;
+      color: #c56a35;
+      font-size: 50px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .hed2d {
+      color: white;
+      position: absolute;
+      top: 150px;
+      left: 300px;
+      font-size: 45px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer h2,
+    .footer h3 {
+      color: #f9a825;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+      flex: 1 1 200px;
+      margin: 10px;
+
+    }
+
+
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+
+    .footer-links a:hover {
+      color: #f9a825;
+    }
+
+    .footer-contact a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-social a {
+      margin-right: 10px;
+    }
+
+    .footer-social img {
+      width: 24px;
+      height: 24px;
+
+      transition: filter 0.3s;
+    }
+
+    .footer-social img:hover {
+      filter: brightness(0.7) invert(0.7);
+      /* Darken on hover */
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+
+
+    }
+
+
+    .return-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 1700px;
+      background: #00b7ff;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      display: none;
+      width: 150px;
+    }
+
+    .return-to-top:hover {
+      background: #0044aa;
+    }
+
+
+    .content {
+      min-height: 100vh;
+      margin-bottom: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      top: 900px;
+
+    }
+
+    .text-img-container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-left: 0px;
+      opacity: 0;
+      transform: translateX(-100px);
+      /* Start off-screen to the left */
+      transition: opacity 1s, transform 1s;
+      margin-bottom: 50px;
+      /* Spacing between blocks */
+    }
+
+    .text-img-container.visible {
+      opacity: 1;
+      transform: translateX(0);
+      /* Move to original position */
+    }
+
+    .text-img-container.reverse {
+      flex-direction: row-reverse;
+      /* Reverse image and text positions */
+      transform: translateX(0);
+      /* Start off-screen to the right */
+      margin-left: 600px;
+
+    }
+
+    .img1 {
+      height: 250px;
+      border-radius: 60px;
+      position: relative;
+      right: 150px;
+    }
+
+    .img2 {
+      height: 250px;
+      border-radius: 60px;
+      position: relative;
+      left: 100px;
+    }
+
+    .img3 {
+      width: 500px;
+      height: 250px;
+      border-radius: 60px;
+      position: relative;
+      bottom: 250px;
+      left: 100px;
+    }
+
+    .img4 {
+      width: 500px;
+      height: 300px;
+      border-radius: 60px;
+      position: relative;
+      bottom: 340px;
+    }
+
+    .text {
+      font-size: 1.5rem;
+    }
+
+
+    /* Responsive Styles */
+@media (max-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+
+  .img {
+    padding-left: 10px;
+    height: 100px;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .button-container {
+    display: block;
+  }
+
+  .but0,
+  .but1,
+  .but2,
+  .but3,
+  .but4 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    top: 500px;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+
+  .footer-social a {
+    margin: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+
+  .return-to-top {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img {
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  h4 {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .text-img-container {
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .text-img-container.reverse {
+    flex-direction: column;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .return-to-top {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img class="img" src="suntec india-modified.png">
+    <h4>Dependable Outscouring
+      Since 1999
+    </h4>
+  </div>
+
+  <div class="nav1">
+    <a href="home.html" target="_blank"><button class="but0">Home Page</button></a>
+    <a href="Histroy of company.html" target="_blank"><button class="but1">Histroy Of Company</button></a>
+    <a href="Information About Clients.html" target="_blank"><button class="but2">Information About Clients</button></a>
+    <a href="Deatails About Technology And skill set they use.html" target="_blank"><button class="but3">Deatails About
+        Technology And Skill Set They Use</button></a>
+    <a href="program organized.html" target="_blank"><button class="but4">Program Organized By Company</button></a>
+
+
+    <div id="hp" class="hero">
+
+      <div>
+        <h1 class="hed1d"></h1>
+        <h1 class="hed2d">Deatails <br>About <br>Technology<br> And Skill <br>Set We Use<br>
+        </h1>
+      </div>
+
+      <div class="mh">
+        <div class="content">
+          <!-- First Block -->
+          <div class="text-img-container" id="animateBlock1">
+            <img src="software.png" class="img1" alt="Image 1">
+            <div class="text">
+
+              <p><u style="color: black; font-size:30px;position: relative; right: 150px;"> &#9758;Software
+                  Development:</u> <span style="color: black;  position: relative; right: 150px;"><br>
+                  Languages: Java, Python, .NET, PHP, C++, JavaScript (Node.js, React.js, Angular).<br>
+                  Frameworks: Spring Boot, Django, Laravel, .NET Core.<br>
+                  Mobile Development: iOS (Swift, Objective-C) and Android (Kotlin, Java).<br>
+                  Web Development: HTML, CSS, JavaScript frameworks, WordPress, Drupal.<br><br></span></p>
+
+            </div>
+          </div>
+
+
+          <!-- Second Block -->
+          <div class="text-img-container reverse" id="animateBlock2" style="margin-right: 99px;">
+            <img src="data and ai.png" class="img2" alt="Image 2">
+            <div class="text">
+              <p style="color: black;  position: relative; left: 100px;"><u style="font-size: 30px;">&#9758;Data
+                  Analytics and AI:</u><br> Data Science Tools: R, Python (Pandas, NumPy, Scikit-learn)<br>
+                AI & Machine Learning: TensorFlow, PyTorch, Keras, IBM Watson<br>
+                Big Data: Hadoop, Spark, Apache Kafka
+                , Microsoft BI.</p>
+            </div>
+          </div>
+
+
+          <br><br><br><br><br><br>
+
+
+          <br><br><br><br><br><br><br><br>
+
+          <!-- Third Block -->
+          <div class="text-img-container" id="animateBlock3" style="margin-right: 850px;">
+            <img src="cloud and dev.jpg" class="img3" alt="Image 3">
+            <div class="text" style=" width: 500px;  position:   relative; left: 120px; bottom: 250px;">
+              <p><u style="font-size: 30px;">&#9758;Cloud Computing and DevOps:</u><br> Cloud Platforms: AWS, Azure,
+                Google Cloud Platform (GCP)<br>
+                DevOps Tools: Docker, Kubernetes, Jenkins, Git, Ansible
+                Serverless Computing: Lambda (AWS), Azure Functions, Firebase.</p>
+            </div>
+          </div>
+
+
+          <br><br><br><br><br><br>
+
+          <!-- Fourth Block -->
+          <div class="text-img-container reverse" id="animateBlock4" style="margin-left: 809px;">
+            <img src="cyber.jpg" class="img4" alt="Image 4">
+            <div class="text" style="width: 500px; color: black;  position: relative; left: 10px; bottom: 350px;">
+              <p><u style="font-size: 30px;">&#9758;Cybersecurity:</u> <br> Tools: Firewalls, VPNs, IDS/IPS<br>
+                Compliance: HIPAA, GDPR, PCI-DSS, ISO standards
+                Vulnerability Assessment: OWASP, Kali Linux, Metasploit.<br>Focuses on securing computer networks from
+                unauthorized access, data breaches, and other network-based threats</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <a href="https://en.wikipedia.org/wiki/Information_technology"> <img src="herodet1.jpg" class="herodet"></a>
+
+
+
+      </div>
+
+      <button class="return-to-top" onclick="scrollToTop()">Return to Top</button>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h2>Sun Tec</h2>
+            <p>Providing cutting-edge solutions to brighten your tech future. We specialize in modern front-end and web
+              development services to bring your ideas to life.</p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#hp">Home</a></li>
+              <li><a href="#hp">About Us</a></li>
+              <li><a href="https://www.suntecindia.com/data-services.html">Services</a></li>
+              <li><a href="https://www.suntecindia.com/contactus.htm">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@suntec.com">info@suntec.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Address: 123 Sun Tec Road, Tech City, ST 56789</p>
+          </div>
+
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/SuntecIndia" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/SuntecIndia" target="_blank"><img src="twi.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/company/suntecindia" target="_blank"><img src="link.png"
+                alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/suntec_india/" target="_blank"><img src="insta.png" alt="Instagram"></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Sun Tec. All Rights Reserved. <br>mini project by vrushabh shelokar</p>
+        </div>
+      </footer>
+
+      <script>
+        // Scroll to top function
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show "Return to Top" button on scroll
+        const topButton = document.querySelector('.return-to-top');
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 200) {
+            topButton.style.display = 'block';
+          } else {
+            topButton.style.display = 'none';
+          }
+        });
+
+
+        const blocks = document.querySelectorAll('.text-img-container');
+
+        window.addEventListener('scroll', () => {
+          blocks.forEach(block => {
+            const rect = block.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+              block.classList.add('visible');
+            }
+          });
+        });
+
+
+      </script>
+
+</body>
+
+</html>
